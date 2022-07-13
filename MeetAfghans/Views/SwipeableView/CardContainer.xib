@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+        <array key="OpenSans-SemiBold.ttf">
+            <string>OpenSans-SemiBold</string>
+        </array>
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CardContainerView" customModule="MeetAfghans" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ec2-fd-6Hc">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-banner" translatesAutoresizingMaskIntoConstraints="NO" id="78O-Uc-XZb">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
+                        </imageView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcU-GL-63J" customClass="UIViewX" customModule="MeetAfghans" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="822" width="414" height="74"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Mandona, 23" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3F-dI-BUu">
+                                    <rect key="frame" x="15" y="10" width="124" height="30"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="21"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="100km away from" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qqw-WJ-LD7">
+                                    <rect key="frame" x="15" y="45" width="127.5" height="19"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS5-g1-lcQ">
+                                    <rect key="frame" x="144" y="10" width="30" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="30" id="RZ7-bR-PCG"/>
+                                        <constraint firstAttribute="width" secondItem="aS5-g1-lcQ" secondAttribute="height" id="jK0-pC-Fkh"/>
+                                    </constraints>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <state key="normal" image="info.circle.fill"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" name="ButtonGradientFirst"/>
+                            <constraints>
+                                <constraint firstItem="V3F-dI-BUu" firstAttribute="leading" secondItem="hcU-GL-63J" secondAttribute="leading" constant="15" id="0BU-BJ-5ge"/>
+                                <constraint firstItem="V3F-dI-BUu" firstAttribute="top" secondItem="hcU-GL-63J" secondAttribute="top" constant="10" id="3ar-JD-GGE"/>
+                                <constraint firstItem="Qqw-WJ-LD7" firstAttribute="top" secondItem="V3F-dI-BUu" secondAttribute="bottom" constant="5" id="6VO-ch-Zqj"/>
+                                <constraint firstItem="aS5-g1-lcQ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="hcU-GL-63J" secondAttribute="top" id="HPO-qC-LSL"/>
+                                <constraint firstItem="aS5-g1-lcQ" firstAttribute="centerY" secondItem="V3F-dI-BUu" secondAttribute="centerY" id="Irh-11-zwz"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aS5-g1-lcQ" secondAttribute="trailing" constant="15" id="Nme-a8-YoY"/>
+                                <constraint firstAttribute="bottom" secondItem="Qqw-WJ-LD7" secondAttribute="bottom" constant="10" id="RZs-7K-iha"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Qqw-WJ-LD7" secondAttribute="trailing" constant="15" id="aPO-Yw-pVL"/>
+                                <constraint firstItem="Qqw-WJ-LD7" firstAttribute="leading" secondItem="V3F-dI-BUu" secondAttribute="leading" id="dTN-2f-5Ue"/>
+                                <constraint firstItem="Qqw-WJ-LD7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="aS5-g1-lcQ" secondAttribute="bottom" constant="5" id="dTx-ne-GnT"/>
+                                <constraint firstItem="aS5-g1-lcQ" firstAttribute="leading" secondItem="V3F-dI-BUu" secondAttribute="trailing" constant="5" id="nNK-te-OPE"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="firstColor">
+                                    <color key="value" name="ButtonGradientFirst"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="secondColor">
+                                    <color key="value" name="ButtonGradientSecond"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="horizontalGradient" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jI2-Hu-xkl" customClass="UIViewX" customModule="MeetAfghans" customModuleProvider="target">
+                            <rect key="frame" x="20" y="20" width="58.5" height="20"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.fill" translatesAutoresizingMaskIntoConstraints="NO" id="Qno-DA-peI">
+                                    <rect key="frame" x="5" y="5" width="10" height="10"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="Qno-DA-peI" secondAttribute="height" id="Zfr-J8-3Er"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="100km" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osO-gh-Hhr">
+                                    <rect key="frame" x="20" y="5" width="33.5" height="10"/>
+                                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="11"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" name="ButtonGradientFirst"/>
+                            <constraints>
+                                <constraint firstItem="Qno-DA-peI" firstAttribute="top" secondItem="jI2-Hu-xkl" secondAttribute="top" constant="5" id="ADd-Wa-MK6"/>
+                                <constraint firstAttribute="height" constant="20" id="F4w-5q-3xn"/>
+                                <constraint firstAttribute="trailing" secondItem="osO-gh-Hhr" secondAttribute="trailing" constant="5" id="G23-Wk-WV9"/>
+                                <constraint firstAttribute="bottom" secondItem="osO-gh-Hhr" secondAttribute="bottom" constant="5" id="YaE-2t-DiL"/>
+                                <constraint firstItem="Qno-DA-peI" firstAttribute="leading" secondItem="jI2-Hu-xkl" secondAttribute="leading" constant="5" id="aBw-Fl-PpJ"/>
+                                <constraint firstItem="osO-gh-Hhr" firstAttribute="leading" secondItem="Qno-DA-peI" secondAttribute="trailing" constant="5" id="gbO-QJ-htN"/>
+                                <constraint firstItem="osO-gh-Hhr" firstAttribute="top" secondItem="jI2-Hu-xkl" secondAttribute="top" constant="5" id="oEF-Rl-JCM"/>
+                                <constraint firstAttribute="bottom" secondItem="Qno-DA-peI" secondAttribute="bottom" constant="5" id="whx-Kj-KZ3"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xzF-Zq-Qk7" customClass="UIViewX" customModule="MeetAfghans" customModuleProvider="target">
+                            <rect key="frame" x="312.5" y="80" width="91.5" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="LIKE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjC-PH-9nB">
+                                    <rect key="frame" x="10" y="10" width="71.5" height="40"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="34"/>
+                                    <color key="textColor" name="ButtonGradientFirst"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="mjC-PH-9nB" firstAttribute="top" secondItem="xzF-Zq-Qk7" secondAttribute="top" constant="10" id="6uo-UH-q9H"/>
+                                <constraint firstAttribute="bottom" secondItem="mjC-PH-9nB" secondAttribute="bottom" constant="10" id="Fap-dC-L4o"/>
+                                <constraint firstItem="mjC-PH-9nB" firstAttribute="leading" secondItem="xzF-Zq-Qk7" secondAttribute="leading" constant="10" id="s9r-fE-383"/>
+                                <constraint firstAttribute="trailing" secondItem="mjC-PH-9nB" secondAttribute="trailing" constant="10" id="sg4-iM-w0y"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ButtonGradientFirst"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UrE-zm-IDo" customClass="UIViewX" customModule="MeetAfghans" customModuleProvider="target">
+                            <rect key="frame" x="10" y="80" width="96" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="SKIP" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2l-Xh-pRB">
+                                    <rect key="frame" x="10" y="10" width="76" height="40"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="34"/>
+                                    <color key="textColor" name="ButtonGradientFirst"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="h2l-Xh-pRB" secondAttribute="trailing" constant="10" id="ABa-ZN-7JH"/>
+                                <constraint firstItem="h2l-Xh-pRB" firstAttribute="top" secondItem="UrE-zm-IDo" secondAttribute="top" constant="10" id="HS1-zL-2Iq"/>
+                                <constraint firstAttribute="bottom" secondItem="h2l-Xh-pRB" secondAttribute="bottom" constant="10" id="QZA-Ir-KIW"/>
+                                <constraint firstItem="h2l-Xh-pRB" firstAttribute="leading" secondItem="UrE-zm-IDo" secondAttribute="leading" constant="10" id="s8O-Uu-ZBU"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="ButtonGradientFirst"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wts-4f-oL2">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="cardBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="78O-Uc-XZb" secondAttribute="trailing" id="1ne-Su-n3J"/>
+                        <constraint firstItem="jI2-Hu-xkl" firstAttribute="top" secondItem="78O-Uc-XZb" secondAttribute="top" constant="20" id="4b3-bF-g7R"/>
+                        <constraint firstAttribute="trailing" secondItem="hcU-GL-63J" secondAttribute="trailing" id="7BI-B6-iqM"/>
+                        <constraint firstItem="Wts-4f-oL2" firstAttribute="top" secondItem="Ec2-fd-6Hc" secondAttribute="top" id="D9M-PA-hyZ"/>
+                        <constraint firstItem="hcU-GL-63J" firstAttribute="top" secondItem="78O-Uc-XZb" secondAttribute="bottom" id="Fe9-jt-ydE"/>
+                        <constraint firstItem="hcU-GL-63J" firstAttribute="leading" secondItem="Ec2-fd-6Hc" secondAttribute="leading" id="M8f-Le-KAh"/>
+                        <constraint firstAttribute="bottom" secondItem="Wts-4f-oL2" secondAttribute="bottom" id="S8I-zM-tmH"/>
+                        <constraint firstItem="jI2-Hu-xkl" firstAttribute="leading" secondItem="78O-Uc-XZb" secondAttribute="leading" constant="20" id="a4d-33-IqS"/>
+                        <constraint firstItem="xzF-Zq-Qk7" firstAttribute="top" secondItem="Ec2-fd-6Hc" secondAttribute="top" constant="80" id="cY9-Xb-1Lt"/>
+                        <constraint firstAttribute="bottom" secondItem="hcU-GL-63J" secondAttribute="bottom" id="fr4-7W-ZoV"/>
+                        <constraint firstItem="UrE-zm-IDo" firstAttribute="top" secondItem="Ec2-fd-6Hc" secondAttribute="top" constant="80" id="gYS-aZ-QUZ"/>
+                        <constraint firstAttribute="trailing" secondItem="xzF-Zq-Qk7" secondAttribute="trailing" constant="10" id="iZ3-he-V8B"/>
+                        <constraint firstItem="78O-Uc-XZb" firstAttribute="leading" secondItem="Ec2-fd-6Hc" secondAttribute="leading" id="lSV-WJ-v5h"/>
+                        <constraint firstItem="UrE-zm-IDo" firstAttribute="leading" secondItem="Ec2-fd-6Hc" secondAttribute="leading" constant="10" id="obg-za-sNZ"/>
+                        <constraint firstItem="78O-Uc-XZb" firstAttribute="top" secondItem="Ec2-fd-6Hc" secondAttribute="top" id="rQL-97-Bvb"/>
+                        <constraint firstItem="Wts-4f-oL2" firstAttribute="leading" secondItem="Ec2-fd-6Hc" secondAttribute="leading" id="uIP-Ey-MWa"/>
+                        <constraint firstAttribute="trailing" secondItem="Wts-4f-oL2" secondAttribute="trailing" id="yKQ-NH-rKL"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Ec2-fd-6Hc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="E6B-Io-MbR"/>
+                <constraint firstAttribute="trailing" secondItem="Ec2-fd-6Hc" secondAttribute="trailing" id="KHU-wN-N1I"/>
+                <constraint firstItem="Ec2-fd-6Hc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="sTH-mv-KSm"/>
+                <constraint firstAttribute="bottom" secondItem="Ec2-fd-6Hc" secondAttribute="bottom" id="xJ1-fP-cKx"/>
+            </constraints>
+            <connections>
+                <outlet property="btnForWholeCard" destination="Wts-4f-oL2" id="BiY-OP-JX5"/>
+                <outlet property="btnInfo" destination="aS5-g1-lcQ" id="x9U-s5-QEs"/>
+                <outlet property="imgProfile" destination="78O-Uc-XZb" id="4gb-fl-348"/>
+                <outlet property="lblDescriptions" destination="Qqw-WJ-LD7" id="s1K-wO-x0i"/>
+                <outlet property="lblFarAwayTop" destination="osO-gh-Hhr" id="9CQ-mX-trV"/>
+                <outlet property="lblNameAndAge" destination="V3F-dI-BUu" id="v8g-GU-0mr"/>
+                <outlet property="viewForLike" destination="xzF-Zq-Qk7" id="qEt-36-PdT"/>
+                <outlet property="viewForSkip" destination="UrE-zm-IDo" id="ASe-o5-Dcu"/>
+            </connections>
+            <point key="canvasLocation" x="24.637681159420293" y="51.5625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="info.circle.fill" width="13" height="13"/>
+        <image name="location.fill" width="13" height="13"/>
+        <image name="user-banner" width="1158" height="1634"/>
+        <namedColor name="ButtonGradientFirst">
+            <color red="0.95300000905990601" green="0.0080000003799796104" blue="0.40400001406669617" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonGradientSecond">
+            <color red="0.27799999713897705" green="0.075000002980232239" blue="0.67100000381469727" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cardBackgroundColor">
+            <color red="0.090999998152256012" green="0.090999998152256012" blue="0.090999998152256012" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

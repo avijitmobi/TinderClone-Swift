@@ -1,0 +1,11 @@
+${PODS_ROOT}/Target Support Files/Pods-MeetAfghans/Pods-MeetAfghans-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework
+${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework
+${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework
+${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework
+${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework
+${PODS_ROOT}/TwilioVoice/Build/iOS/TwilioVoice.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioChatClient/TwilioChatClient.framework/TwilioChatClient
